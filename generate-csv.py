@@ -39,7 +39,7 @@ def parse_md(filename):
 def main():
     for file in sorted(os.listdir("./en")):
         if file.find("-V") != -1:
-            parse_md("./en/" + file)
+            parse_md(f"./en/{file}")
 
 
 if __name__ == '__main__':
